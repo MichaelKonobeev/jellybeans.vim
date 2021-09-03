@@ -301,7 +301,7 @@ if !exists("g:jellybeans_background_color")
   let g:jellybeans_background_color = "151515"
 end
 
-call s:X("Normal","e8e8d3",g:jellybeans_background_color,"","White","")
+call s:X("Normal","efefef",g:jellybeans_background_color,"","White","")
 set background=dark
 
 if !exists("g:jellybeans_use_lowcolor_black") || g:jellybeans_use_lowcolor_black
@@ -344,22 +344,22 @@ call s:X("ColorColumn","","000000","","",s:termBlack)
 
 call s:X("Title","70b950","","bold","Green","")
 
-call s:X("Constant","cf6a4c","","","Red","")
+call s:X("Constant","8197bf","","","Red","")
 call s:X("Special","799d6a","","","Green","")
 call s:X("Delimiter","668799","","","Grey","")
 
-call s:X("String","99ad6a","","","Green","")
+call s:X("String","7fbf7f","","","Green","")
 call s:X("StringDelimiter","556633","","","DarkGreen","")
 
 call s:X("Identifier","c6b6ee","","","LightCyan","")
 call s:X("Structure","8fbfdc","","","LightCyan","")
-call s:X("Function","fad07a","","","Yellow","")
-call s:X("Statement","8197bf","","","DarkBlue","")
-call s:X("PreProc","8fbfdc","","","LightBlue","")
+call s:X("Function","fef7e9","","","Yellow","")
+call s:X("Statement","bfbfbf","","","DarkBlue","")
+call s:X("PreProc","7298b0","","","LightBlue","")
 
 hi! link Operator Structure
 
-call s:X("Type","ffb964","","","Yellow","")
+call s:X("Type","fdecc9","","","Yellow","")
 call s:X("NonText","606060",g:jellybeans_background_color,"",s:termBlack,"")
 
 call s:X("SpecialKey","444444","1c1c1c","",s:termBlack,"")
@@ -382,7 +382,8 @@ call s:X("SpellLocal","","2D7067","underline","","Green")
 
 " Diff
 
-hi! link diffRemoved Constant
+" hi! link diffRemoved Constant
+call s:X("diffRemoved", "d47b60","","","Red","")
 hi! link diffAdded String
 
 " VimDiff
